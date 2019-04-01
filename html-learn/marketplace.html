@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn SC' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Unica One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: white;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #55A2C5 ;
+   font-family: 'Vollkorn SC';
+}
+  body {Font-family: 'Unica One';, sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 200px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 800px;
+}
+  .tabcontent2 {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 800px;
+}
+
+.header h1 {
+  font-size: 50px;
+   font-family: 'Playfair Display SC';
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+  left: 100x;
+
+}
+  .leftcolumna {
+  position: absolute;
+  left: 15px;
+  width: 400px;
+  height: 130px;
+  top:450px;
+
+
+}
+  div.c {
+  position: absolute;
+  right: 100px;
+  width: 200px;
+  height: 20px;
+  top:300px;
+
+}
+div.g {
+position: absolute;
+right: 350px;
+width: 200px;
+height: 20px;
+top:400px;
+
+}
+ div.a {
+  position: absolute;
+  right: 620px;
+  width: 200px;
+  height: 20px;
+  top:300px;
+
+}
+div.z {
+ position: absolute;
+ right: 220px;
+ width: 200px;
+ height: 20px;
+ top:300px;
+
+}
+   div.b{
+  position: absolute;
+  right: 620px;
+  width: 200px;
+  height: 20px;
+  top:600px;
+
+}
+   div.d{
+   position: absolute;
+  right: 100px;
+  width: 200px;
+  height: 20px;
+  top:600px;
+
+}
+div.i{
+position: absolute;
+
+left:590px;
+width: 200px;
+height: 20px;
+top:600px;
+
+}
+div.hr{
+position: absolute;
+right: 50px;
+width: 200px;
+height: 20px;
+top:74px;
+
+}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+
+}
+  .card1 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align:center;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+  .fa {
+ padding: 20px;
+  font-size: 30px;
+  width: 65px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+</style>
+</head>
+<body>
+<div class="hr">
+  <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Shopping Cart</button>
+
+
+</div>
+
+<div class="header">
+  <h1>MarketPlace</h1>
+  <p>Clothes made for you</p>
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="openStore(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openStore(event, 'Tops')">Tops</button>
+    <button class="tablinks" onclick="openStore(event, 'Bottoms')">Bottoms</button>
+
+</div>
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card1">
+      <h2>NEW & NOW </h2>
+      <h3>The T R E N D EdiT</h3>
+      <img src="https://media.dorothyperkins.com/wcsstore/ConsumerDirectStorefrontAssetStore/images/colors/color3/cms/pages/json/json-0000157780/images/FLUID_Hero.png" style="width:550px;height:308px;"/>
+      <div class="z">
+    <img src="https://bkdesigns.b-cdn.net/wp-content/uploads/2017/05/summer-sale-banner-with-palm-leaves.jpg" style="width:350px;height:508px;"/>
+  </div><!--
+      <div class="g">
+        <img src="https://img.freepik.com/free-vector/geometric-sale-banners-with-text-space_1017-11175.jpg?size=338&ext=jpg" style="width:400px;height:408px;"/>
+      </div>
+    -->
+    </div>
+
+  </div>
+  <div class="leftcolumna">
+
+
+    <div class="card">
+      <h3>Follow Us</h3>
+   <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-snapchat-ghost"></a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<div id="Tops" class="tabcontent">
+  <h3>Tops</h3>
+  <img src="https://anf.scene7.com/is/image/anf/KIC_140-9143-0311-206_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+<p>Puff Sleve Blouse: $29 </p>
+  <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+  <div class="i">
+   <img src="https://anf.scene7.com/is/image/anf/KIC_140-9005-2109-908_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+ <p>Tie-Front Blouse: $32</p>
+   <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+</div>
+
+<div class="c">
+    <img src="https://anf.scene7.com/is/image/anf/KIC_139-9005-0515-214_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+  <p>Rugby Polo: $29 </p>
+  <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+</div>
+
+  <div class="b">
+    <img src="https://anf.scene7.com/is/image/anf/KIC_139-9004-0532-220_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+    <p>Blue V-neck Sweater: $17</p>
+  <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+    </div>
+  <div class="d">
+    <img src=" https://anf.scene7.com/is/image/anf/KIC_140-9200-0368-501_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+    <p>Tie-Front Top: $34.80 </p>
+  <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+    </div>
+  <div class="a">
+  <img src="https://anf.scene7.com/is/image/anf/KIC_150-9003-1124-202_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+    <p>Crewneck Sweater: $25.60 </p>
+  <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+</div>
+</div>
+
+<div id="Bottoms" class="tabcontent">
+  <h3>Bottoms</h3>
+   <img src="https://anf.scene7.com/is/image/anf/KIC_155-7230-0415-276_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+<p>High-Rise Skinny Jeans: $78 </p>
+  <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+   <div class="i">
+   <img src="https://anf.scene7.com/is/image/anf/KIC_149-9100-0634-279_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+
+ <p>Denim Short Overalls: $62</p>
+  <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+</div>
+ <div class="card">
+<div class="c">
+    <img src="https://anf.scene7.com/is/image/anf/KIC_156-9008-0455-204_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+  <p>Button Wide Leg Pants: $34 </p>
+  <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+</div>
+</div>
+<div class="card">
+
+
+  <div class="b">
+    <img src="https://anf.scene7.com/is/image/anf/KIC_149-9003-0631-975_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+    <p>Black Denim Shorts: $58</p>
+      <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+    </div>
+  </div>
+  <div class="card">
+  <div class="d">
+    <img src="https://anf.scene7.com/is/image/anf/KIC_156-9003-0457-330_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+    <p>Belted Taper Patns: $40.80 </p>
+    <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+    </div>
+  </div>
+  <div class="card">
+  <div class="a">
+  <img src="https://anf.scene7.com/is/image/anf/KIC_149-9050-0628-277_prod1?$product-anf-v1$&wid=800&hei=1000" style="width:180px;height:208px;"/>
+    <p> Denim Shorts: $58 </p>
+  <button class="https://cdn3.iconfinder.com/data/icons/check-out-vol-2-glyph/48/Sed-14-512.png" onclick="openStore(event, 'Shopping Cart')">Add To Bag</button>
+</div>
+</div>
+<!--
+-->
+</div>
+<div id="Shopping Cart" class="tabcontent">
+<h3>Shopping Cart</h3>
+<!--
+addto cart interaction
+-->
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class=""></i> Full Name</label>
+            <input type="text" id="fname" name="firstname">
+            <label for="email"><i class=""></i> Email</label>
+            <input type="text" id="" name="email">
+            <label for="adr"><i class=""></i> Address</label>
+            <input type="text" id="adr" name="address" >
+            <label for="city"><i class=""></i> City</label>
+            <input type="text" id="city" name="city">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <h3>Visa, American Express, Citi, and Discover </h3>
+
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber">
+            <label for="expmonth">Expiry Month</label>
+            <input type="text" id="expmonth" name="expmonth">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Expiry Year</label>
+                <input type="text" id="expyear" name="expyear">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"></i> <b>1</b></span></h4>
+
+      <p><a href="#">Puff Sleve Blouse</a> <span class="price">$29</span></p>
+      <hr>
+      <p>Tax <span class="price" style="color:black"><b>$2.50</b></span></p>
+      <p>Shipping <span class="price" style="color:black"><b>$4.00</b></span></p>
+      <p>Total <span class="price" style="color:black"><b>$35.50</b></span></p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<script>
+function openStore(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</body>
+</html>
